@@ -1,4 +1,4 @@
-package org.ashwin.tree;
+package practice.tree;
 
 
 public class TreeNode {

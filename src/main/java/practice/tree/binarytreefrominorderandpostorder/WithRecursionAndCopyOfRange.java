@@ -1,9 +1,12 @@
-package org.ashwin.tree.binarytreefrominorderandpostorder;
+package practice.tree.binarytreefrominorderandpostorder;
 
-import org.ashwin.tree.TreeNode;
+import practice.tree.TreeNode;
 
 import java.util.Arrays;
 
+/*
+* Time complexity O(n*n)
+* */
 public class WithRecursionAndCopyOfRange {
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {

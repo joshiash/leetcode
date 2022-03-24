@@ -1,6 +1,6 @@
-package org.ashwin.tree.maximumdepthoftree;
+package practice.tree.maximumdepthoftree;
 
-import org.ashwin.tree.TreeNode;
+import practice.tree.TreeNode;
 
 public class MaxDepthWithRecursion {
     public int maxDepth(TreeNode root) {
