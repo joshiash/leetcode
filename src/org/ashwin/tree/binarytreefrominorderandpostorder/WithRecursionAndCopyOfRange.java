@@ -1,10 +1,12 @@
 package org.ashwin.tree.binarytreefrominorderandpostorder;
 
+import org.ashwin.tree.TreeNode;
+
 import java.util.Arrays;
 
 public class WithRecursionAndCopyOfRange {
 
-    public static TreeNode buildTree(int[] inorder, int[] postorder) {
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
         if(postorder.length == 1 && inorder.length == 1) {
             return new TreeNode(postorder[0]);
         }
@@ -23,31 +25,12 @@ public class WithRecursionAndCopyOfRange {
         return root;
     }
 
-    public static int findIndex(int[] array, int value) {
+    public int findIndex(int[] array, int value) {
         for(int i=0; i<array.length; i++) {
             if (array[i] == value) {
                 return i;
             }
         }
         return 0;
-    }
-
-    public static void main(String[] args) {
-        int[] inorder = new int[]{9,3,15,20,7};
-        int[] postorder = new int[]{9,15,7,20,3};
-        TreeNode tree = buildTree(inorder, postorder);
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }
